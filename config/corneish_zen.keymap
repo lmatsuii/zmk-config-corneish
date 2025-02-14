@@ -122,10 +122,10 @@
 
         MIRYOKU {
             bindings = <
-&trans  &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y         &kp U             &kp I          &kp O             &kp P                &trans
-&trans  &htp LGUI A  &htp LALT S  &htp LCTRL D  &htp LSHIFT F  &kp G        &kp H         &htp RSHIFT J     &htp RCTRL K   &htp RALT L       &htp RGUI SEMICOLON  &trans
-&trans  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N         &kp M             &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH            &trans
-                                  &lt 9 ESC     &lt 6 SPACE    &lt 7 TAB    &lt 12 ENTER  &lt 10 BACKSPACE  &lt 11 DELETE
+&none  &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y         &kp U            &kp I          &kp O             &kp P                &none
+&none  &htp LGUI A  &htp LALT S  &htp LCTRL D  &htp LSHIFT F  &kp G        &kp H         &htp RSHIFT J    &htp RCTRL K   &htp RALT L       &htp RGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N         &kp M            &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH            &none
+                                 &lt 8 ESC     &lt 6 SPACE    &lt 7 TAB    &lt 11 ENTER  &lt 9 BACKSPACE  &lt 10 DELETE
             >;
 
             label = "MIRYOKU";
@@ -133,10 +133,10 @@
 
         NAV {
             bindings = <
-&trans  &trans    &trans    &trans     &trans      &trans    &kp K_REDO    &kp K_PASTE    &kp K_COPY     &kp K_CUT     &kp K_UNDO  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp CAPSLOCK  &kp LEFT       &kp DOWN       &kp UP_ARROW  &kp RIGHT   &trans
-&trans  &trans    &trans    &trans     &trans      &trans    &kp INSERT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
-                            &trans     &trans      &trans    &kp ENTER     &kp BACKSPACE  &kp DELETE
+&none  &none     &none     &none      &trans      &none    &kp K_REDO      &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO    &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK  &none
+&none  &none     &none     &none      &none       &none    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT    &none
+                           &none      &none       &none    &kp ENTER       &kp BACKSPACE   &kp DELETE
             >;
 
             label = "NAV";
@@ -144,30 +144,21 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &trans    &trans     &trans      &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans    &trans    &trans     &trans      &trans    &trans      &trans          &trans          &trans        &trans           &trans
-                            &trans     &trans      &trans    &mkp RCLK   &mkp LCLK       &mkp MCLK
+&none  &none     &none     &none      &none       &none    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none    &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none     &none     &none      &none       &none    &none       &none           &none           &none         &none            &none
+                           &none      &none       &none    &mkp RCLK   &mkp LCLK       &mkp MCLK
             >;
 
             label = "MOUSE";
         };
 
-        BUTTON {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
         MEDIA {
             bindings = <
-&trans  &trans    &trans    &trans     &trans      &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans           &kp K_PREVIOUS    &kp C_VOL_DN     &kp C_VOLUME_UP  &kp K_NEXT       &trans
-&trans  &trans    &trans    &trans     &trans      &trans    &trans           &ubuntu           &macos           &ubuntu_miryoku  &macos_miryoku   &trans
-                            &trans     &trans      &trans    &kp K_STOP       &kp K_PLAY_PAUSE  &kp K_MUTE
+&none  &none     &none     &none      &none       &none    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none    &none            &kp K_PREVIOUS    &kp C_VOL_DN     &kp C_VOLUME_UP  &kp K_NEXT       &none
+&none  &none     &none     &none      &none       &none    &none            &ubuntu           &macos           &ubuntu_miryoku  &macos_miryoku   &none
+                           &none      &none       &none    &kp K_STOP       &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
 
             label = "MEDIA";
@@ -175,10 +166,10 @@
 
         NUM {
             bindings = <
-&trans  &kp LEFT_BRACKET  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET       &trans  &trans      &trans     &trans    &trans    &trans
-&trans  &kp SEMICOLON     &kp N4  &kp N5      &kp N6  &kp EQUAL               &trans  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
-&trans  &kp GRAVE         &kp N1  &kp N2      &kp N3  &kp NON_US_BACKSLASH    &trans  &trans      &trans     &trans    &trans    &trans
-                                  &kp PERIOD  &kp N0  &kp MINUS               &trans  &trans      &trans
+&none  &kp LEFT_BRACKET  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET       &none  &none       &none      &none     &none     &none
+&none  &kp SEMICOLON     &kp N4  &kp N5      &kp N6  &kp EQUAL               &none  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+&none  &kp GRAVE         &kp N1  &kp N2      &kp N3  &kp NON_US_BACKSLASH    &none  &none       &none      &none     &none     &none
+                                 &kp PERIOD  &kp N0  &kp MINUS               &none  &none       &none
             >;
 
             label = "NUM";
@@ -186,10 +177,10 @@
 
         FUN {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8              &kp F9     &kp PRINTSCREEN    &trans  &trans      &trans     &trans    &trans    &trans
-&trans  &kp F11  &kp F4  &kp F5              &kp F6     &kp SCROLLLOCK     &trans  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
-&trans  &kp F10  &kp F1  &kp F2              &kp F3     &kp PAUSE_BREAK    &trans  &trans      &trans     &trans    &trans    &trans
-                         &kp K_CONTEXT_MENU  &kp SPACE  &kp TAB            &trans  &trans      &trans
+&none  &kp F12  &kp F7  &kp F8              &kp F9     &kp PRINTSCREEN    &none  &none       &none      &none     &none     &none
+&none  &kp F11  &kp F4  &kp F5              &kp F6     &kp SCROLLLOCK     &none  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+&none  &kp F10  &kp F1  &kp F2              &kp F3     &kp PAUSE_BREAK    &none  &none       &none      &none     &none     &none
+                        &kp K_CONTEXT_MENU  &kp SPACE  &kp TAB            &none  &none       &none
             >;
 
             label = "FUN";
@@ -197,10 +188,10 @@
 
         SYM {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &trans  &trans  &trans  &trans  &trans  &trans
-                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans  &trans  &trans
+&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none            &none      &none     &none     &none
+&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none  &none            &none      &none     &none     &none
+                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none            &none
             >;
 
             label = "SYM";
